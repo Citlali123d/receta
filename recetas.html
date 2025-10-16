@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetario Gourmet</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5c518;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #1a1a1a;
+      padding: 2rem 1rem;
+      border-bottom: 2px solid #f5c518;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #1c1c1c;
+      border: 1px solid #f5c51833;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(245, 197, 24, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 25px rgba(245, 197, 24, 0.4);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-content h2 {
+      font-size: 1.5rem;
+      color: #f5c518;
+    }
+    .card-content p {
+      color: #d1d1d1;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .download-btn {
+      background-color: #f5c518;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #d1aa10;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1a1a1a;
+      border-top: 2px solid #f5c518;
+      color: #b8b8b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍽️ Recetario Gourmet</h1>
+    <p>Explora nuestras recetas y descarga tus favoritas</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="Curry de berenjenas, tomate y espinacas.jpeg" alt="Curry de berenjenas, tomate y espinacas">
+      <div class="card-content">
+        <h2>Curry de berenjenas, tomate y espinacas</h2>
+        <p>Una receta deliciosa con sabores exóticos, ideal para los amantes de la cocina vegetariana.</p>
+        <a href="Curry de berenjenas, tomate y espinacas.jpeg" download>
+          <button class="download-btn">Descargar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Tajine de verduras al ras el hanout con cuscús.jpeg" alt="Tajine de verduras al ras el hanout con cuscús">
+      <div class="card-content">
+        <h2>Tajine de verduras al ras el hanout con cuscús</h2>
+        <p>Un plato marroquí tradicional con especias aromáticas y una textura irresistible.</p>
+        <a href="Tajine de verduras al ras el hanout con cuscús.jpeg" download>
+          <button class="download-btn">Descargar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Solomillo de cerdo guisado al aroma de la albahaca.jpeg" alt="Solomillo de cerdo guisado al aroma de la albahaca">
+      <div class="card-content">
+        <h2>Solomillo de cerdo guisado al aroma de la albahaca</h2>
+        <p>Carne tierna con un toque herbal y fresco que deleitará tu paladar.</p>
+        <a href="Solomillo de cerdo guisado al aroma de la albahaca.jpeg" download>
+          <button class="download-btn">Descargar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Sopa de ajo.jpeg" alt="Sopa de ajo">
+      <div class="card-content">
+        <h2>Sopa de ajo</h2>
+        <p>Una receta tradicional llena de sabor y energía, perfecta para los días fríos.</p>
+        <a href="Sopa de ajo.jpeg" download>
+          <button class="download-btn">Descargar</button>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Recetario Gourmet | Diseñado con amor y sabor 🍷</p>
+  </footer>
+</body>
+</html>
